@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: Poppins, 'Segoe UI';
+    line-height: 1.5rem;
+}
+body {
+    text-align: center;
+}
+button {
+    margin: 5px;
+    padding: 10px;
+    width: 80%;
+    font-size: 16px;
+}
+#extension {
+    width: 250px;
+    height: 315px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        width: 135px;
+    }
+
+    h2, p {
+        margin: 0;
+    }
+
+    p {
+        margin: 8px 0;
+    }
+
+    h2 {
+        margin-top: 0px;
+        text-transform: uppercase;
+        font-size: 1.7em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+
+.circle {
+    width: 140px;
+    height: 140px;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    padding: 10px;
+
+    p{
+        font-size: 1.3em;
+    }
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+
+    button {
+        border-radius: 8px;
+        border: none;
+        font-size: 1.1em;
+    }
+
+    #start {
+        background-color: blue;
+        color: white;
+        transition: 0.15s ease-in;
+        border: 2px solid blue;
+    }
+    #start:hover {
+        background-color: white;
+        color: blue;
+    }
+    #reset {
+        background-color: gray;
+        color: white;
+        transition: 0.15s ease-in;
+        border: 2px solid gray;
+    }
+    #reset:hover {
+        background-color: white;
+        color: gray;
+    }
+}
+
+.quiz {
+    width: 250px;
+    height: 315px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 1.7em;
+        margin-bottom: 20px;
+    }
+}
+
+.question {
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+.answer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 0;
+
+    input{
+        border-radius: 8px;
+        border: 2px solid black;
+        height: 40px;
+        font-size: 1.2em;
+        padding-left: 10px;
+        transition: 150ms ease;
+        margin: 0;
+    }
+    input:focus {
+        outline: none;
+    }
+    input:hover {
+        border-color: black  ;
+    }
+}
+
+#next {
+    width: 40%;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.1em;
+    background-color: blue;
+    color: white;
+    transition: 0.15s ease-in;
+    border: 2px solid blue;
+    margin-top: 0px;
+}
+#next:hover {
+    background-color: white;
+    color: blue;
+}
+
+#result {
+    width: 250px;
+    height: 315px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+}
