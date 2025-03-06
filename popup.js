@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     ]
 
-    const extensinUI = document.getElementById('extension');
+    const extensionUI = document.getElementById('extension');
     const startButton = document.getElementById("start");
     const stopButton = document.getElementById("reset");
     const timerDisplay = document.getElementById("timer");
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     chrome.runtime.onMessage.addListener((message) => {
         if (message.action === "quizTime") {
-            extensinUI.style.display = "none";
+            extensionUI.style.display = "none";
             quizPage.style.display = "block";
             loadQuiz();
         }
@@ -129,11 +129,11 @@ document.addEventListener("DOMContentLoaded", function () {
     // Request current timer state on popup open
     chrome.runtime.sendMessage({ action: "getTimer" }, (response) => {
         if (response && response.time === 0) {
-            extensinUI.style.display = "none";
+            extensionUI.style.display = "none";
             quizPage.style.display = "block";
             loadQuiz();
         } else if (response && response.time !== undefined) {
-            extensinUI.style.display = "block";
+            extensionUI.style.display = "block";
             quizPage.style.display = "none";
             updateTimerDisplay(response.time);
         }

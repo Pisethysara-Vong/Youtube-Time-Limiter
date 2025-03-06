@@ -2,13 +2,11 @@
     "manifest_version": 3,
     "name": "YouTube Time Limiter",
     "version": "1.0",
-    "description": "Limits YouTube access with a countdown timer and a challenge to regain access.",
+    "description": "Limits YouTube access with a countdown timer and a general knowledge quiz to regain access.",
     "permissions": [
         "tabs",
-        "storage",
         "scripting",
-        "declarativeNetRequest",
-        "notifications"
+        "declarativeNetRequest"
     ],
     "host_permissions": [
         "*://www.youtube.com/*"

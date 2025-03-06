@@ -1,4 +1,4 @@
-let timerDuration = 2 * 60 * 60; // 2 hours in seconds
+let timerDuration = 10; // 2 hours in seconds
 let timeLeft = timerDuration;
 let timerRunning = false;
 let intervalId = null;
