@@ -88,9 +88,14 @@ document.addEventListener("DOMContentLoaded", function () {
     
     function loadResult() {
         quizPage.innerHTML = `
-        <div id="result">
-            <h3>You scored ${score} out of ${quiz.length}.</h3>
-            <h3>Youtube access has been granted.</h3>
+        <div>
+            <h2 id="resultTitle">Result</h2>
+            <div id="result">
+                <h3>You scored <span>${score}</span> out of ${quiz.length}.</h3>
+                <h3>Youtube access has been granted.</h3>
+                <h3>Now go back to work.</h3>
+                <h3>(￣︿￣)</h3>
+            </div>
         </div>
         `;
         chrome.runtime.sendMessage({ action: "unblockYoutube" });

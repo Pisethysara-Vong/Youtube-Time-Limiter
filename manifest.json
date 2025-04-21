@@ -5,7 +5,6 @@
     "description": "Limits YouTube access with a countdown timer and a general knowledge quiz to regain access.",
     "permissions": [
         "tabs",
-        "scripting",
         "declarativeNetRequest"
     ],
     "host_permissions": [

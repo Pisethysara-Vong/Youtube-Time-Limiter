@@ -1,11 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
 * {
     margin: 0;
     padding: 0;
 }
 
 html{
-    font-family: Poppins, 'Segoe UI';
+    font-family: "Roboto", sans-serif;
     line-height: 1.5rem;
 }
 body {
@@ -18,9 +17,10 @@ button {
     font-size: 16px;
 }
 #extension {
+    border: 2px solid black;
     width: 250px;
     height: 315px;
-    padding: 10px;
+    padding: 13px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,23 +29,33 @@ button {
         width: 135px;
     }
 
-    h2, p {
+    h2 {
         margin: 0;
     }
 
     p {
         margin: 8px 0;
+        font-size: 1.1em;
     }
 
     h2 {
         margin-top: 0px;
         text-transform: uppercase;
-        font-size: 1.7em;
+        font-size: 1.8em;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    
+}
+
+#Youtube {
+    color: red;
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+#TimeLimiter {
+    text-decoration: underline;
 }
 
 .circle {
@@ -60,14 +70,15 @@ button {
     justify-content: center;
     justify-self: center;
     padding: 10px;
+    margin-top: 20px;
 
-    p{
-        font-size: 1.3em;
+    #timer{
+        font-size: 1.3rem;
     }
 }
 
 .buttons {
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
     width: 100%;
     justify-content: space-evenly;
@@ -79,49 +90,50 @@ button {
     }
 
     #start {
+        background-color: green;
+        color: white;
+        transition: 0.15s ease-in;
+        border: 2px solid green;
+    }
+    #start:hover {
+        background-color: white;
+        color: green;
+    }
+    #reset {
         background-color: blue;
         color: white;
         transition: 0.15s ease-in;
         border: 2px solid blue;
     }
-    #start:hover {
-        background-color: white;
-        color: blue;
-    }
-    #reset {
-        background-color: gray;
-        color: white;
-        transition: 0.15s ease-in;
-        border: 2px solid gray;
-    }
     #reset:hover {
         background-color: white;
-        color: gray;
+        color: blue;
     }
 }
 
 .quiz {
     width: 250px;
     height: 315px;
-    padding: 10px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 2px solid black;
 
     h2 {
         text-transform: uppercase;
-        font-size: 1.7em;
+        font-size: 1.8em;
         margin-bottom: 20px;
+        text-decoration: underline;
     }
 }
 
 .question {
     margin: 20px 0;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .answer {
-    display: flex;
     width: 100%;
     align-items: center;
     justify-self: center;
@@ -129,11 +141,23 @@ button {
     margin-bottom: 20px;
     padding: 0;
 
+    form {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-self: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        padding: 0;
+        border: 2px solid black;
+    }
+
     input{
         border-radius: 8px;
+        width: 90%;
         border: 2px solid black;
         height: 40px;
-        font-size: 1.2em;
+        font-size: 1.3em;
         padding-left: 10px;
         transition: 150ms ease;
         margin: 0;
@@ -147,15 +171,17 @@ button {
 }
 
 #next {
-    width: 40%;
+    width: 30%;
     border-radius: 8px;
     border: none;
-    font-size: 1.1em;
+    font-size: 2em;
     background-color: blue;
     color: white;
     transition: 0.15s ease-in;
     border: 2px solid blue;
     margin-top: 0px;
+    padding: 0;
+    
 }
 #next:hover {
     background-color: white;
@@ -163,12 +189,22 @@ button {
 }
 
 #result {
-    width: 250px;
-    height: 315px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     align-items: center;
-    justify-content: center;
+    justify-content:start;
     justify-self: center;
+    font-size: 1.5em;
+
+    span {
+        color: green;
+    }
+}
+
+#resultTitle {
+    text-transform: uppercase;
+    font-size: 1.8em;
+    text-decoration: underline;
+    text-align: center;
 }
